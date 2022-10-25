@@ -45,8 +45,49 @@ body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
 }
+body{
+    animation: changebg 5s infinite alternate linear;
+}
+
+@keyframes changebg{
+    0%{
+        background: #84B6F4;
+    }
+    25%{
+        background: #BC98F3;
+    }
+    50%{
+        background: #FDCAE1;
+    }
+    75%{
+        background: #FDCAE1;
+    }
+    100%{
+        background: #84B6F4;
+    }
+}
+div.bn__video{
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h1{
+    background: black;
+    color: white;
+    font-size: 220px;
+    text-align: center;
+    font-weight: 400;
+    mix-blend-mode: multiply;
+}
 .container{
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -95,10 +136,11 @@ header{
 }
 
 
-/* Main */
+/* Main pagina 1*/
 
 main.welcome{
     background-image:url(../images/homepageback.jpg);
+    background-position:0rem 9.099rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,11 +166,17 @@ main.welcome{
     
 }
 
+/* Main pagina 2 */
+
+
 /* Footer */
 
 footer {
-    background-color:var(--color2);
+    background-color: rgba(247, 79, 208, 0.3);
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
     width: 100%;
+    font-size:2.5em;
 }
 section.foot{
     display: flex;
