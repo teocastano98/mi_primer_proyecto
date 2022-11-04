@@ -1,135 +1,135 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 
 /* Variables */
 
-:root{
+:root {
 
     /* Paleta */
-    
-        --color1:#FDCAE1;
-        --color2:#84B6F4;
-        --color3:#BC98F3;
-        --color4:#f74fd0;
-    
-     /* Font sizes */
-    
-        --txt-xxl:48em;
-        --txt-xl:3.6em;
-        --txt-lg:3.2em;
-        --txt-md:2em;
-        --txt-sm:1..6em;
-    
+
+    --color1: #FDCAE1;
+    --color2: #84B6F4;
+    --color3: #BC98F3;
+    --color4: #f74fd0;
+
+    /* Font sizes */
+
+    --txt-xxl: 48em;
+    --txt-xl: 3.6em;
+    --txt-lg: 3.2em;
+    --txt-md: 2em;
+    --txt-sm: 1..6em;
+
     /* Spacings */
-    
-        --sp-xxl: 12rem;
-        --sp-xl: 8rem;
-        --sp-lg: 5rem;
-        --sp-md: 3.2rem;
-        --sp-sm: 1.6rem;
-        --sp-xs: 0.8rem;
-    }
+
+    --sp-xxl: 12rem;
+    --sp-xl: 8rem;
+    --sp-lg: 5rem;
+    --sp-md: 3.2rem;
+    --sp-sm: 1.6rem;
+    --sp-xs: 0.8rem;
+}
 
 /* Normalize */
 
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
 }
-html{
+
+html {
     font-size: 65.5%;
 }
-body {
 
+body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
 }
-body{
+
+body {
     animation: changebg 5s infinite alternate linear;
 }
 
-@keyframes changebg{
-    0%{
+@keyframes changebg {
+    0% {
         background: #84B6F4;
     }
-    25%{
+
+    25% {
         background: #BC98F3;
     }
-    50%{
+
+    50% {
         background: #FDCAE1;
     }
-    75%{
+
+    75% {
         background: #FDCAE1;
     }
-    100%{
+
+    100% {
         background: #84B6F4;
     }
 }
-div.bn__video{
-    position: relative;
+p{
+    font-size: var(--sp-sm);
+    text-align: justify;
 }
 
-video{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-h1{
-    background: black;
-    color: white;
-    font-size: 220px;
-    text-align: center;
-    font-weight: 400;
-    mix-blend-mode: multiply;
-}
-.container{
+.container {
     max-width: 120rem;
     margin: 0 auto;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
-a{
+
+a {
     text-decoration: none;
-    color:white;
+    color: white;
     display: flex;
     align-items: center
 }
+
 a:hover {
     color: #FF0000;
 }
+
 a:visited {
     color: none;
 }
+
 a:link {
-    color: none ;
+    color: none;
 }
 
 /* Header/Navar*/
 
-header{
-    position: fixed;
+header {
     background-color: rgba(247, 79, 208, 0.3);
     -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
     width: 100%;
-    font-size:2.5em;
+    height: 10rem;
+    font-size: 2.5em;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: var(--sp-xs);
 }
-.navbar .logo__header{
-    height:84px;
+
+.navbar .logo__header {
+    height: 84px;
 }
-.navbar .menu{
+
+.navbar .menu {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -138,9 +138,8 @@ header{
 
 /* Main pagina 1*/
 
-main.welcome{
-    background-image:url(../images/homepageback.jpg);
-    background-position:0rem 9.099rem;
+main.welcome {
+    background-image: url(../images/homepageback.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +149,7 @@ main.welcome{
     background-size: cover;
 }
 
-.welcome__txtcontainer .welcome__frase h1{
+.welcome__txtcontainer .welcome__frase h1 {
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
@@ -163,11 +162,70 @@ main.welcome{
     font-size: 36px;
     text-align: center;
     color: white;
-    
+
 }
 
 /* Main pagina 2 */
 
+article.banner {
+    bottom: 9.6rem;
+    font-family: 'Anton', sans-serif;
+    background-color: rgb(128, 2, 111);
+}
+
+article.banner h1.banner__title {
+    color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20em;
+    font-weight: bold;
+
+    background-image: url(../images/bg_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section.card {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--sp-sm);
+}
+
+article.card__present{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: var(--sp-sm);
+    margin: 20px;
+
+    background-color: rgba(255, 255, 255, 0.39);
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    width: 100%;
+    font-size: 2.5em;
+}
+article.card__present h2{
+    text-decoration:overline double;
+    font-style: italic;
+}
+ 
+section.masInfo{
+    background-color: rgba(255, 255, 255, 0.39);
+    -webkit-backdrop-filter: blur(1rem);
+    backdrop-filter: blur(1rem);
+    width: 100%;
+    font-size: 2.5em;
+}
+section.masInfo p.masInfo__ph{
+    padding: var(--sp-sm);
+}
 
 /* Footer */
 
@@ -176,18 +234,20 @@ footer {
     -webkit-backdrop-filter: blur(1rem);
     backdrop-filter: blur(1rem);
     width: 100%;
-    font-size:2.5em;
+    font-size: 2.5em;
 }
-section.foot{
+
+section.foot {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-section .foot__social{
+
+section .foot__social {
     display: flex;
     align-items: center;
 }
-.foot__cpy p{
+
+.foot__cpy p {
     font-size: var(--sp-sm);
 }
-
